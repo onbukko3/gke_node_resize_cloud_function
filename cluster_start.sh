@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# User action initiative script to start a GKE node
+
 # Get activated project id
 PROJECT_ID = $(gcloud config get project)
 
