@@ -8,8 +8,8 @@ PROJECT_ID=$(gcloud config get-value project)
 echo "The number of node size will be set on $PROJECT_ID"
 echo "Initialize your GKE cluster to enable storing data into GCP"
 read -p "Zone: " ZONE
-[ -z "$ZONE" ] && echo "Zone is empty, so it is set with defalut zone europe-west1-d" 
 ZONE=europe-west1-d
+[ -z "$ZONE" ] && echo "Zone is empty, so it is set with defalut zone $ZONE" 
 
 read -p "Cluster ID: " CLUSTER_ID
 read -p "Node Pool ID: " NODEPOOL_ID
