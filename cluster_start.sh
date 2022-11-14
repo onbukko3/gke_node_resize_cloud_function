@@ -5,6 +5,7 @@
 # Get activated project id
 PROJECT_ID = $(gcloud config get project)
 
+echo "The number of node size will be set on ${PROJECT_ID}"
 echo "Initialize your GKE cluster to enable storing data into GCP"
 read -p "Cluster ID: " CLUSTER_ID
 read -p "Node Pool ID: " NODEPOOL_ID
